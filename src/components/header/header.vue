@@ -258,7 +258,7 @@
               padding: 0 12px
               margin-bottom: 12px
               font-size: 0
-              &.last-child
+              &:last-child
                 margin-bottom: 0
               .icon
                 display: inline-block
