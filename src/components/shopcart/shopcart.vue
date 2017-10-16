@@ -50,7 +50,7 @@
     </transition>
   </div>
     <transition name="fade">
-      <div class="list-mask" v-show="listShow"></div>
+      <div class="list-mask" v-show="listShow" @click="toggleList"></div>
     </transition>
   </div>
 </template>
