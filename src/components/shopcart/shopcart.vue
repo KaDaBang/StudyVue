@@ -12,7 +12,7 @@
         <div class="price" :class="{'highlight': totalCount>0}">￥ {{totalPrice}}</div>
         <div class="desc">另需配送费{{deliveryPrice}}元</div>
       </div>
-      <div class="content-right">
+      <div class="content-right" @click="pay">
         <div class="pay" :class="payClass">
           {{payDesc}}
         </div>
@@ -50,7 +50,7 @@
     </transition>
   </div>
     <transition name="fade">
-      <div class="list-mask" v-show="listShow"></div>
+      <div class="list-mask" v-show="listShow" @click="toggleList"></div>
     </transition>
   </div>
 </template>
